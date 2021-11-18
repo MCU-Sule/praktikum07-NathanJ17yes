@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    let mawar = prompt ("berapa mawar yang ingin di beli ?(5000)")
+    let Tulip = prompt ("berapa Tulip yang ingin di beli ?(8000)")
+    let Anggrek = prompt ("berapa Anggrek yang ingin di beli ?(10000)")
+    let Total = prompt ("berapa uang yang anda ingin bayar")
+    let HargaM = mawar*5000;
+    let HargaT = Tulip*8000;
+    let HargaA = Anggrek*10000;
+    let totalH = HargaM+HargaA+HargaT;
+    let kembalian = totalH-Total;
+    document.write ("Anda membeli Mawar sebanyak <b>"+mawar+"bunga </b> dengan harga total Rp."+HargaM+"<br>")
+    document.write ("Anda membeli Tulip sebanyak <b>"+Tulip+"bunga </b> dengan harga total Rp."+HargaT+"<br>")
+    document.write ("Anda membeli Anggrek sebanyak <b>"+Anggrek+"bunga </b> dengan harga total Rp."+HargaA+"<br>")
+    document.write ("Total belanjaan anda <br> Rp."+totalH+ "</b> <br><br>")
+    if (u>totalH) {
+        document.write("Kembailan anda adalah Rp."+ kembalian)
+
+    }
+    else {
+        document.write("uang anda tidak cukup")
+    }
+</script>
+</body>
+</html>
